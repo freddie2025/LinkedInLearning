@@ -1,0 +1,14 @@
+CREATE TABLE dbo.TestIsolationLevels (
+EmpID INT NOT NULL,
+EmpName VARCHAR(100),
+EmpSalary MONEY,
+CONSTRAINT pk_EmpID PRIMARY KEY(EmpID) )
+GO
+
+INSERT INTO dbo.TestIsolationLevels 
+VALUES 
+(2322, 'Drew Brees', 3115000),
+(2900, 'Alvin Kamara', 211000),
+(2219, 'Mark Ingram', 43000),
+(2950, 'Cam Jordan', 13000) 
+GO
